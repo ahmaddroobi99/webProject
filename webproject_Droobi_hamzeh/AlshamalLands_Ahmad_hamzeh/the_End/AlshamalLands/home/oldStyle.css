@@ -1,0 +1,40 @@
+.aio{
+  margin-left:47px;
+  align:center;
+  margin-top:40px;
+  position:relative;
+  font-family:  'Oswald', sans-serif;
+  border-radius:25px;
+  box-shadow:  black;
+  margin-bottom:100px;
+  height:300px;
+  font-size: 13px;
+  
+	-webkit-transition: .1s all ease-in-out;
+	transition: .1s all ease-in-out;
+  }
+  
+  .aio:hover{
+    box-shadow:5px 5px 20px rgb(170, 156, 156);
+    webkit-transform: scale(1.15, 1.15) rotate(-5deg);
+	  -ms-transform: scale(1.15, 1.15) rotate(-5deg);
+	  transform: scale(1.15, 1.15) rotate(-5deg);
+  }
+  .aio img{
+    margin: 10px;
+    border-radius: 25px 25px 25px 25px;
+    width: 270px;
+    cursor: pointer;
+    height: 280px;
+    
+  }
+
+  .AppS {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #05090e;
+
+  }
+  

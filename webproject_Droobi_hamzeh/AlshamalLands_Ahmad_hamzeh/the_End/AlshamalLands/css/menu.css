@@ -1,0 +1,242 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+	background-color: black;
+}
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../imgs/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+.clearfix:after{
+	content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 100px;
+	width: auto;
+	float: left;
+	margin-top: 20px;	
+}
+.main-nav{
+	float: right;
+	margin-top: 60px;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec; 
+}
+
+.main-content-header{
+	width: 900px;
+	height: 240px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	word-spacing: 5px;
+	letter-spacing: 2px;
+}
+
+h3{color: #bf55ec;
+font-size:180%;
+text-align: center;
+text-transform:uppercase;
+}
+
+
+.mobile-icon{display: none;}
+
+
+.tablink {
+  background-color: transparent;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 25%;
+  border-bottom: 1px solid #fff;
+  font-family: 'Flamenco', cursive;
+  text-transform: uppercase;
+  
+}
+
+.tablink:hover {
+  background-color: #bf55ec;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: transparent;}
+#News {background-color: transparent;}
+#Contact {background-color: transparent;}
+#About {background-color: transparent;}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px solid #bf55ec;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+  margin-left: 16%;
+}
+
+form.example button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: 17px;
+  border: 2px solid #bf55ec;
+  border-left: none; 
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #bf55ec;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1{font-size: 240%;
+color: #fff;
+text-align: center;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/*///Responsive Queries///*/
+
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+
+
+@media only screen and (max-width: 768px){
+	
+    .main-nav{display: none;}
+
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+
+	}
+
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+
+	}
+
+  .column {
+  width: 100%;
+}
+}
+
+

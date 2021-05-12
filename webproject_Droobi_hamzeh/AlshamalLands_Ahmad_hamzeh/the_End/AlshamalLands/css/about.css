@@ -1,0 +1,303 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+	background-color: black;
+
+}
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../imgs/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+.clearfix:after{
+	content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 200px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+    opacity: .3;
+}
+.main-nav{
+	float: right;
+	margin-top: 60px;
+    border-color: #1d1e1f;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec; 
+}
+
+.main-content-header{
+	width: 900px;
+	height: 240px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+p{color: #fff;
+	font-size: 100%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+    margin-top: 0px;
+	font-weight: bold;
+}
+
+h1{color: #bf55ec;
+	font-size: 200%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	/*border: 1px solid red;*/
+}
+
+
+.container {
+  position: relative;
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.container .content {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%; 
+  padding: 5px;
+}
+
+.container .content h1{font-size: 150%;
+color: #fff}
+
+/* slide shows */
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-shadow: 2px 2px black;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.mobile-icon{display: none;}
+
+.colorchange{
+  animation: colorchangecafe 1s infinite;
+}
+
+
+footer{text-align: center;
+height: 150px;
+font-size: 130%;
+}
+
+@keyframes colorchangecafe{
+  0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: white;}
+    100%{color: #bf55ec;}
+
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  *border: 1px solid red;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/*///Responsive Queries///*/
+
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}	
+}
+
+@media only screen and (max-width: 998px){
+    p{font-size: 90%;}
+    h1{font-size: 160%}
+    .container .content h1{font-size: 80%}
+}
+
+@media only screen and (max-width: 768px){
+	p{font-size: 100%;}
+	h1{font-size: 140%}
+
+
+    .main-nav{display: none;}
+
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+.container .content h1{font-size: 80%}
+	
+}	
+
+@media only screen and (max-width: 480px){
+    
+     p{font-size: 80%;}
+    h1{font-size:120%}
+     .container .content h1{font-size: 80%}
+       
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,186 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+  background-color: black;
+}
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../imgs/table.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.clearfix:after{
+	content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 200px;
+	width: auto;
+	float: left;
+	margin-top: 20px;	
+}
+.main-nav{
+	float: right;
+	margin-top: 60px;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+	background-color: #dd4b39 ;
+    opacity: .5;
+}
+
+.main-content-header{
+	width: 900px;
+	height: 240px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+.mobile-icon{display: none;}
+
+/*///Responsive Queries///*/
+
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+
+@media only screen and (max-width: 768px){
+	
+    .main-nav{display: none;}
+
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+
+	}
+
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+
+	}
+}
+
+
+
+{box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+   border-radius: 5px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+   border-radius: 5px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+   border-radius: 5px;
+}
+
+button:hover {
+  opacity:.7;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  border-radius: 5px;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
